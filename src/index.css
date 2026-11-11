@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pink-legal: #D94F87;
+  --color-pink-light: #F8DCE8;
+  --color-pink-soft: #FFF5F9;
+  --color-wine-legal: #742A4A;
+  --color-graphite-legal: #25232A;
+  --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #F8DCE8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D94F87;
+}
+
+/* Hide scrollbar for category horizontal scroll while retaining drag/scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

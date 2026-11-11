@@ -1,0 +1,6 @@
+{
+  "name": "Legalmente Contraponto",
+  "description": "Plataforma de desenvolvimento intelectual e argumentação jurídica. Uma questão. Diferentes perspectivas. Dez minutos para pesquisar. Dois minutos para argumentar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
